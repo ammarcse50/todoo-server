@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: '*',
-  methods: '*',
-  allowedHeaders: '*'
+  origin: [
+         "http://localhost:5173"
+  ]
 }));
 const port = process.env.PORT || 5000;
 
